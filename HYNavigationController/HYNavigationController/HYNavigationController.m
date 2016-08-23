@@ -24,6 +24,8 @@ static const char *assoKeyEnableGesture="__yrakenabg";
 
 }
 
+#pragma mark - BackGesture
+
 -(BOOL)enableBackGesture{
     NSNumber *enableGestureNum = objc_getAssociatedObject(self, assoKeyEnableGesture);
     if (enableGestureNum) {
@@ -182,5 +184,6 @@ static const char *assoKeyEnableGesture="__yrakenabg";
     }
     return true;
 }
+
 
 @end

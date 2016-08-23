@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HYNavigationController : UINavigationController
+@interface HYNavigationController : UINavigationController<UINavigationControllerDelegate>
 
 /** 设置是否支持手势滑动返回, 默认为NO */
 @property (assign,nonatomic) BOOL enableBackGesture;
 
-/** 手势滑动返回的偏移量 */
+/** 手势滑动返回有效果的偏移量 */
 @property (nonatomic) CGFloat offsetBackGesture;
 
 @end
